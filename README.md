@@ -9,7 +9,7 @@ Visualizar o projeto no [Github](https://github.com/);
 Este projeto é um aplicativo **React** que permite buscar usuários no GitHub e exibir informações sobre eles, o mesmo retorna informações como 
 - Imagem de Perfil
 - Nome
-- Usuário no githu
+- Usuário no github
 - Bio
 - Localização
 - Repositórios públicos
