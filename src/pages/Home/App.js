@@ -76,7 +76,7 @@ function App() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Visualizar perfil no Github
+                    Visualizar perfil
                   </a>
                   <p>{currentUser.bio}</p>
                 </div>
