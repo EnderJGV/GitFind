@@ -2,9 +2,10 @@ import './styles.css';
 const Header = () =>  {
   return (
     <header>
-      <h1>GitFind</h1>
+      <p>
+        @GitFind - <span>Buscador de Usuários no github</span></p>
     </header>
-  )
+  );
 }
 
 export {Header};

@@ -1,0 +1,231 @@
+.conteudo{
+    position: relative;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.background{
+    height: 100vh;
+    position: absolute;
+    left: 0;
+}
+
+.info{
+    width: 60%;
+    margin-right: 90px;
+    margin-top: 40px;
+    color: #ffff;
+}
+
+input{
+    border: 1px solid #999999;
+    border-radius: 0.5rem;
+    width: 55%;
+    max-width: 250px;
+    margin-right: 12px;
+    background: transparent;
+    font-size: .8rem;
+    padding: 0.5rem 2rem;
+    outline: none;
+    color: #ffff;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+input:hover{
+    border: 1px solid #e9e9e9;
+}
+
+input:focus{
+    border: none;
+    box-shadow: 0 0 0 1px #25953b;
+}
+
+button {
+    border: 1px solid #238636;
+    border-radius: 0.5rem;
+    margin-right: 12px;
+    background: #238636;
+    color: #ffff;
+    font-size: .8rem;
+    padding: 0.5rem 2rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #196228;
+}
+
+button:active{
+    transition: 0.3ms ease-in;
+    background-color: #25953b;
+}
+
+.perfil{
+    display: flex;
+    margin: 40px 0;
+    align-items: center;
+}
+
+/* Imagem de perfil */
+.profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 8rem;
+    border: 2px solid #e5e5e5;
+    margin-right: 32px;
+}
+
+/* Nome do usuário */
+.perfil h3{
+    color: #e9e9e9;
+    font-size: 2rem;
+    margin: 1rem 0 .2rem 0;
+}
+/* Biografia */
+.perfil p{
+    color: #999999;
+    font-size: .9rem;
+    font-weight: 300;
+    margin: 20px 0 0 0;
+    width: 80%;
+    text-align: justify;
+}
+
+/* Username */
+.perfil span{
+    display: block;
+    color: #999999;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Link do perfil */
+.perfil a{
+    color: #25953b;
+    text-decoration: none;
+    font-size: .7rem;
+    cursor: pointer;
+    transition: .3ms ease-in-out;
+}
+
+.perfil a:hover{
+    color: #238636;
+}
+.perfil a:active{
+    color: #196228;
+}
+
+.perfil .location{
+    font-size: .8rem;
+    color: #e9e9e9;
+    margin: .2rem 0 .2rem 0;
+}
+
+.repositorio{
+    font-size: 32px;
+    color: #ffff;
+    margin: 12px 0;
+    text-align: start;
+}
+
+/* Estilizando a barra de rolagem para navegadores Webkit */
+body::-webkit-scrollbar {
+    width: 7px;
+    /* Largura da barra de rolagem */
+}
+
+/* Cor da parte rolável da barra */
+body::-webkit-scrollbar-thumb {
+    background-color: #25953b62;
+    /* Azul do GitHub */
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    border: 3px solid none;
+    /* Borda branca */
+}
+
+
+/* Efeito hover na barra de rolagem */
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #25953bd1;
+    /* Azul mais escuro no hover */
+}
+
+@media (max-width: 1047px) {
+    .info{
+        width: 100%;
+        margin: 2rem;
+    }
+    .background{
+        display: none;
+    }
+
+    p{
+        font-size: .8rem;
+    }
+    .perfil{
+        align-items: center;
+        margin-top: 15px;
+    }
+    .profile{
+        width: 90px;
+        height: 90px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    .perfil{
+        position: relative;
+        width: 100%;
+        h3{
+            font-size: 1.2rem;
+        }
+        p{
+            display: none;
+        }
+        span{
+            font-size: 1rem;
+        }
+        .location{
+            font-size: .7rem;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        a{
+            font-size: .7rem;
+            border: 1px solid #25953b;
+            color: #fff;
+            padding: 0.2rem 1rem;
+            border-radius: 0.5rem;
+        }
+    }
+
+    .search{
+        text-align: center;
+        display: flex;
+    }
+
+    input{
+        width:100%;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0 0 0 1rem;
+    }
+
+    input::placeholder{
+        font-size: .7rem;
+        text-align: start;
+    }
+
+    .repositorio{
+        font-size: 1rem;
+    }
+
+
+}

@@ -1,13 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Inter', Roboto, Arial;
 }
 
 body{
     background-color: #1d2128;
-}
-
-hr{
-    background-color: #1d2128;
-    border: 1px solid rgba(299, 299, 299, 0,2);
 }
